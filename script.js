@@ -93,10 +93,10 @@ document.addEventListener('DOMContentLoaded', function() {
         const timer = setInterval(() => {
             current += increment;
             if (current >= target) {
-                element.textContent = target + (target >= 1000 ? '+' : '');
+                element.textContent = target + (target >= 100 ? '+' : '');
                 clearInterval(timer);
             } else {
-                element.textContent = Math.floor(current) + (target >= 1000 ? '+' : '');
+                element.textContent = Math.floor(current) + (target >= 100 ? '+' : '');
             }
         }, stepTime);
     }
